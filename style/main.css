@@ -4,6 +4,10 @@ body{
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
+img{
+    max-width: 100%;
+}
+
 /* ----- header ----- */
 .header{
     width: 100vw;
@@ -36,11 +40,66 @@ body{
 
 .header__nav li a{
     text-decoration:none;
-    padding: 20px 0;
-    font-size: 14px;
+    padding: 22px 0;
+    font-size: 12px;
     display: block;
     text-align: center;
-    color: #899e9ebd;
+    color: #899e9ed2;
+    text-transform: uppercase;
     background-color: #263535;
     border-bottom: 1px solid rgba(255, 255, 255, 0.151) ;
+    transition: all .3s;
+}
+.header__nav li a:hover{
+    color: #63c6ae;
+}
+
+
+/* Section acess */
+.acess{
+    text-align: center;
+    height: 80vh;
+    padding: 30px;
+    background: url(../img/01.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.acess__title{
+    margin: 0;
+    text-transform: uppercase;
+    background-color: #63c6ad83;
+    font-size: 28px;
+    padding: 30px 10px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.863);
+}
+.acess__title abbr{
+    text-decoration: none;
+}
+
+.acess__p{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.856);
+}
+
+.acess__btn{
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.938);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.329);
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px rgba(255, 255, 255, 0.671) solid;
+    transition: all .4s;
+}
+.acess__btn:hover{
+    color: #63c6adcb;
+    padding: 12px;
 }
