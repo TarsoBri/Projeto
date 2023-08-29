@@ -5,6 +5,14 @@ body{
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 1400px;
+}
+
 .button{
     background-color: #444d5ac2;
     color: white;
@@ -24,12 +32,6 @@ body{
     transform: scale(1.1); 
     border: white 1px solid;
 }
-.container{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1em;
-    padding-right: 1em;
-}
 
 img{
     max-width: 100%;
@@ -40,13 +42,17 @@ img{
 /* ----- header ----- */
 .header{
     width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .logotext{
     text-transform: uppercase;
     text-decoration:none;
     font-size: 24px;
-    display: inline-block;
+    display: flex;
+    float: left;
     margin: 0;
     padding: 23px;
     color: white;
@@ -55,10 +61,12 @@ img{
 }
 
 .header__btn-menu{
+    
 }
 
 .header__nav{
-    display: block;
+    display: block; 
+    width: 100%;
 }
 
 .header__nav ul{
@@ -66,6 +74,7 @@ img{
     padding: 0;
     list-style: none;
 }
+
 
 .header__nav li a{
     text-decoration:none;
@@ -134,7 +143,6 @@ img{
     flex-direction: column;
     margin: 2.5em 0;
     transition: all .2s;
-    
 }
 
 .people-cards__back-img{
@@ -234,7 +242,12 @@ img{
 .gallery__imgs img{
     width: 100%;
     display: block;
+    margin: 0;
 }
+
+
+
+/* Slider-imgs */
 
 .slider-img{
     display: inline-block;
@@ -252,3 +265,149 @@ img{
     display: inline-block;
 }
 
+
+
+/* Quote-container */
+
+.quote-container{
+    background-color: #31a185de;
+    padding: 50px 0;
+    border-bottom: 10px solid #559e8c9d;
+    color: white;
+}
+
+.quote-slideshow{
+
+}
+
+.quote-slideshow h2{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 28px;
+    margin: 0;
+}
+
+.quote-slideshow figcaption{
+    font-size: 18px;
+    text-align: center;
+}
+
+.no-js .quote-slideshow figure + figure{
+    margin-top: 5em;
+}
+
+/* Footer */
+
+.footer{
+    background-color: #242a2c;
+    padding: 50px ;
+    color: #4f5355;
+}
+
+.footer__links{
+    padding: 0;
+    list-style: none; 
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+}
+
+.footer__links li a{
+    list-style: none;
+    font-size: 28px;
+    color: #72787a;
+    display: block;
+    text-decoration: none;
+    transition: all .3s;
+}
+.footer__links li a:hover{
+    color: #63c6ae;
+}
+
+
+
+
+@media screen and (min-width: 1024px){
+    /* header */
+    .header{
+        position: fixed;
+        flex-direction: row;
+    }
+    .logotext{
+        width: 25%;
+        box-sizing: border-box;
+        justify-content: end;
+        padding-right: 3em;
+    }
+
+    .header__btn-menu{
+        display: none;
+    }
+
+    .header__nav{
+        width: 75%;
+        max-width: 700px;
+    }
+    
+    .header__nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .header__nav li{
+        flex-grow: 1;
+    }
+    
+    .header__nav li a{
+        font-size: 14px;
+        padding: 32px 0;
+        background-color: white;
+        border: none;
+    }
+
+
+
+    /*  People Cards  */
+
+    .people-cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .people-cards__back-img{
+        width: 100%;
+        height: 200px;
+    }
+
+
+
+    /* Content */
+
+    .content .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+
+
+    /* Galery */
+
+    .gallery__imgs{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+
+
+    /* Footer */
+
+    .footer .container{
+        display: flex;
+        gap: 20px;
+    }
+
+    .footer .container > * {
+        margin: 1.5em;
+    }
+}
