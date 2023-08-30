@@ -16,14 +16,20 @@
 
         <link rel="stylesheet" href="style/normalize.css">
         <link rel="stylesheet" href="style/main.css">
-      
-    </head>
-    <body class="no-js">
+
+        
+      </head>
+      <body class="no-js">
         
         <header class="header">
           <a class="logotext" href="index.html">Infusion</a>
           
-          <button class="header__btn-menu" style="display: none;">Menu</button>
+          <!-- <button class="header__btn-menu" style="display: none;">Menu</button> -->
+        <div class="header__btn-menu" style="display: none;">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
           
           <nav class="header__nav">
             <ul>
@@ -42,17 +48,17 @@
           <p class="acess__p">Gutful of bottlo no dramas he's got a massive hooroo.</p>
           <a class="button acess__btn" href="#">Buy it now</a>                      
         </section>
-
-      <div class="container">
-        <section class="people-cards">
-          <article class="people-cards__card">               
-            <img src="img/c01.jpg" alt="Carousel Img" class="people-cards__back-img">
-            
-            <div class="people-cards__people">
-              <img src="img/teamsprite_01.png" alt="Carousel Img">
-            </div>
-            <div class="people-cards__content">
-              <h2 class="people-cards__title">Lorem ipsum dolor sit amet consectetur</h2>
+        
+        <div class="container">
+          <section class="people-cards">
+            <article class="people-cards__card">               
+              <img src="img/c01.jpg" alt="Carousel Img" class="people-cards__back-img">
+              
+              <div class="people-cards__people">
+                <img src="img/teamsprite_01.png" alt="Carousel Img">
+              </div>
+              <div class="people-cards__content">
+                <h2 class="people-cards__title">Lorem ipsum dolor sit amet consectetur</h2>
               <p class="people-cards__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.</p>
             </div>
           </article>  
@@ -98,14 +104,14 @@
 
       <section class="content">
         <div class="container">
-
+          
           <article class="content__article">
             <h3 class="content__title">Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed.</h3>
             <p class="content__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>            
             <a href="#" class="button button-primary">Button</a>
             <a href="#" class="button button-secundary">Button</a>
           </article>
-
+          
           <article class="content__article">
             <h3 class="content__title">Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed.</h3>
             <p class="content__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at odio.</p>
@@ -121,7 +127,7 @@
               <h2>Galery</h2>
             </div>
           </div>
-
+          
           <div class="gallery__imgs">
             <img src="img/articles/01.jpg" alt="">
             <img src="img/articles/02.jpg" alt="">
@@ -137,7 +143,7 @@
             <img src="img/articles/12.jpg" alt="">
           </div>
         </section>
-
+        
         <section class="slider-img">          
           <div class="slideshow">
             <figure><img alt="" src="img/slider/slide-01.png" /></figure>
@@ -169,20 +175,24 @@
         <footer class="footer">
           <div class="container">
             <h2>INFUSION</h2>
-          
-              <p>Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. Maecenas diam est, venenatis vitae dui in, vestibulum mollis arcu. Donec eu nibh tincidunt, dapibus sem eu, aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
-          
-              <p>aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
-             <div class="rights"> 
+            
+            <p>Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. Maecenas diam est, venenatis vitae dui in, vestibulum mollis arcu. Donec eu nibh tincidunt, dapibus sem eu, aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
+            
+            <p>aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
+            <div class="rights"> 
               <ul class="footer__links">
                 <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
               </ul>
               <p>&copy;tarso_bri</p>
-             </div>
             </div>
           </div>
-        </footer>
+        </div>
+      </footer>
+
+      <script src="js/menu.js"></script>
+      <script src="js/main.js"></script>
+      
     </body>
 </html>
