@@ -1,7 +1,7 @@
 function Menu(config){
     this.nav = ( typeof config.container === 'string') ? 
     document.querySelector(config.container) : config.container;
-    
+
     this.btn = ( typeof config.toggleBtn === 'string') ?
     document.querySelector(config.toggleBtn) : config.toggleBtn;
     
@@ -26,8 +26,6 @@ function Menu(config){
             closeMenu();
         }
     }
-    
-
 
 
     this.btn.addEventListener('click', openOrCloseMenu);
@@ -44,9 +42,8 @@ function Menu(config){
         _opened = true;
         _this.btn.classList.add('active')
         
-        var  _top = this.nav.getBoundingClientRect().top + 'px';
         var _style = {
-            maxHeight: 'calc(100vh - '+ _top +')',
+            maxHeight: '100vh',
             overflow: 'hidden'
         };
         
@@ -69,8 +66,5 @@ function Menu(config){
         Object.keys(_style).forEach(stl =>{
             _this.nav.style[stl] = _style[stl];
         })
-        console.log(_style)
     }
-
-
 }
