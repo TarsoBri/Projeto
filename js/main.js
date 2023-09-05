@@ -11,9 +11,14 @@
 
         var carouselImgs = new Carousel({
             container: '.slider-img .slideshow',
-            itens: '.slideshow figure',
-            btnPrevius: '.slideshow .btnprevius',
-            btnNext: '.slideshow .btnnext'
+            itens: 'figure',
+            btnPrevius: '.btnprevious',
+            btnNext: '.btnnext'
         });
 
-        
+        var carouselDocuments = new Carousel({
+            container: '.quote-container .quote-slideshow',
+            itens: 'figure',
+            btnPrevius: '.prev',
+            btnNext: '.next'
+        });
