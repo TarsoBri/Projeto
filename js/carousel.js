@@ -45,7 +45,7 @@ function Carousel(config){
         _currentSlide++;
         showSlide();
     }
-    setInterval(showNextSlide, 8000);
+    setInterval(showNextSlide, 10000);
     
     function showSlide(){
         var qtd = _this.itens.length;

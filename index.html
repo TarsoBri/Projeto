@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
     <head>
-        <title> Infusion </title>
+        <title> Wise Gallery </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">  
         <meta name="author" content="Daniel">
@@ -33,22 +33,22 @@
           
           <nav class="header__nav">
             <ul>
-              <li><a href="#">Design folio</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Our business</a></li>
-              <li><a href="#">How we help</a></li>
-              <li><a href="#">Take the tour</a></li>
+              <li><a href="#">Photographers</a></li>
+              <li><a href="#">Galery</a></li>
+              <li><a href="#">Comments</a></li>
               <li><a href="#">Contact</a></li>
+              <li><a href="#">Help</a></li>
             </ul>
           </nav>
         </header>
         
         <section class="acess">            
           <h1 class="acess__title">Welcome</h1>
-          <p class="acess__p">Gutful of bottlo no dramas he's got a massive hooroo.</p>
+          <p class="acess__p">Come and enjoy our photo gallery</p>
           <a class="button acess__btn" href="#">Sign in</a>                      
         </section>
         
+        <div class="cards-title"><p>Our photographers</p></div>
         <div class="container">
           <section class="people-cards">
             <article class="people-cards__card">               
@@ -58,7 +58,7 @@
                 <img src="img/teamsprite_01.png" alt="Carousel Img">
               </div>
               <div class="people-cards__content">
-                <h2 class="people-cards__title">Lorem ipsum dolor sit amet consectetur</h2>
+                <h2 class="people-cards__title">John Walker</h2>
               <p class="people-cards__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.</p>
             </div>
           </article>  
@@ -70,7 +70,7 @@
               <img src="img/teamsprite_02.png" alt="Carousel Img">
             </div>
             <div class="people-cards__content">
-              <h2 class="people-cards__title">Lorem ipsum dolor sit amet consectetur</h2>
+              <h2 class="people-cards__title">Victor Silveira</h2>
               <p class="people-cards__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.</p>
             </div>
           </article>  
@@ -82,7 +82,7 @@
               <img src="img/teamsprite_03.png" alt="Carousel Img">
             </div>
             <div class="people-cards__content">
-              <h2 class="people-cards__title">Lorem ipsum dolor sit amet consectetur</h2>
+              <h2 class="people-cards__title">Mikael Dutra</h2>
               <p class="people-cards__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.</p>
             </div>
           </article>  
@@ -94,7 +94,7 @@
               <img src="img/teamsprite_04.png" alt="Carousel Img">
             </div>
             <div class="people-cards__content">
-              <h2 class="people-cards__title">Lorem ipsum dolor sit amet consectetur</h2>
+              <h2 class="people-cards__title">Thiago Oliveira</h2>
               <p class="people-cards__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.</p>
             </div>
           </article>  
@@ -102,26 +102,18 @@
         </section>
       </div>
 
-      <section class="content">
-        <div class="container">
-          
-          <article class="content__article">
-            <h3 class="content__title">Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed.</h3>
-            <p class="content__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>            
-            <a href="#" class="button button-primary">Save</a>
-            <a href="#" class="button button-secundary">See More</a>
-          </article>
-          
-          <article class="content__article">
-            <h3 class="content__title">Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed.</h3>
-            <p class="content__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at odio.</p>
-            <p class="content__p">Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean vitae lectus erat. Duis consequat laoreet velit. Mauris convallis, sapien sit amet scelerisque accumsan, felis urna aliquet nunc, viverra mollis odio tellus a nisl. Nulla lobortis lectus non rutrum viverra. Sed et molestie libero. Sed ut ultrices dui.</p>
-          </article>  
-          
-        </div>
-      </section>
+      <section class="slider-img">          
+        <div class="slideshow">
+          <figure><img alt="" src="img/slider/slide-01.png" /></figure>
+          <figure><img alt="" src="img/slider/slide-02.png" /></figure>
+          <figure><img alt="" src="img/slider/slide-03.png" /></figure>
+          <figure><img alt="" src="img/slider/slide-04.png" /></figure>
+          <span class="btnprevious btns" style="display: none;"><i class="fas fa-angle-left fa-4x"></i></span>
+          <span class="btnnext" style="display: none;"><i class="fas fa-angle-right fa-4x"></i></span>
+        </div>                    
+      </section>  
         
-        <section class="gallery">
+      <section class="gallery">
           <div class="gallery__title">
             <div class="container">
               <h2>Galery</h2>
@@ -129,31 +121,21 @@
           </div>
           
           <div class="gallery__imgs">
-            <img src="img/articles/01.jpg" alt="">
-            <img src="img/articles/02.jpg" alt="">
-            <img src="img/articles/03.jpg" alt="">
-            <img src="img/articles/05.jpg" alt="">
-            <img src="img/articles/04.jpg" alt="">
-            <img src="img/articles/06.jpg" alt="">
-            <img src="img/articles/07.jpg" alt="">
-            <img src="img/articles/08.jpg" alt="">
-            <img src="img/articles/09.jpg" alt="">
-            <img src="img/articles/10.jpg" alt="">
-            <img src="img/articles/11.jpg" alt="">
-            <img src="img/articles/12.jpg" alt="">
+            <img src="img/Gallery/aaron-burden-xjwX7Y3QoQ8-unsplash.jpg" alt="">
+            <img src="img/Gallery/jj-ying-9Qwbfa_RM94-unsplash.jpg" alt="">
+            <img src="img/Gallery/lucas-davies-iP8ElEhqHeY-unsplash.jpg" alt="">
+            <img src="img/Gallery/raphael-nogueira-CErddu-JwKw-unsplash.jpg" alt="">
+            <img src="img/Gallery/michael-discenza-5omwAMDxmkU-unsplash.jpg" alt="">
+            <img src="img/Gallery/sora-sagano-8sOZJ8JF0S8-unsplash.jpg" alt="">
+            <img src="img/Gallery/anna-kovalova-Y_ilUnHga5A-unsplash.jpg" alt="">
+            <img src="img/Gallery/voicu-apostol-1U7CackTnfg-unsplash.jpg" alt="">
+            <img src="img/Gallery/07.jpg" alt="">
+            <img src="img/Gallery/marek-piwnicki-IEi7lWx7XiA-unsplash.jpg" alt="">
+            <img src="img/Gallery/marek-piwnicki-YQFs8kIZi8M-unsplash.jpg" alt="">
+            <img src="img/Gallery/sheila-swayze-hKFE6lYZps0-unsplash.jpg" alt="">
           </div>
-        </section>
+      </section>
         
-        <section class="slider-img">          
-          <div class="slideshow">
-            <figure><img alt="" src="img/slider/slide-01.png" /></figure>
-            <figure><img alt="" src="img/slider/slide-02.png" /></figure>
-            <figure><img alt="" src="img/slider/slide-03.png" /></figure>
-            <figure><img alt="" src="img/slider/slide-04.png" /></figure>
-            <span class="btnprevious btns" style="display: none;"><i class="fas fa-angle-left fa-4x"></i></span>
-            <span class="btnnext" style="display: none;"><i class="fas fa-angle-right fa-4x"></i></span>
-          </div>                    
-        </section>  
         
         <section class="quote-container">
           <div class="quote-slideshow">
@@ -165,11 +147,33 @@
               <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.</h2>
               <figcaption> - Einstein. </figcaption>
             </figure>
+            <figure>
+              <h2>Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa, proin sed molestie massa, Mauris mattis suscipit est.</h2>
+              <figcaption> - Shelby. </figcaption>
+            </figure>
             
             <span class="prev" style="display: none;"><i class="fas fa-angle-left fa-2x"></i></span>
             <span class="next" style="display: none;"><i class="fas fa-angle-right fa-2x"></i></span>
           </div>
-          
+        </section>
+
+        <section class="content">
+          <div class="container">
+            
+            <article class="content__article">
+              <h3 class="content__title">Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed.</h3>
+              <p class="content__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>            
+              <a href="#" class="button button-primary">Save</a>
+              <a href="#" class="button button-secundary">See More</a>
+            </article>
+            
+            <article class="content__article">
+              <h3 class="content__title">Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed.</h3>
+              <p class="content__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at odio.</p>
+              <p class="content__p">Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean vitae lectus erat. Duis consequat laoreet velit. Mauris convallis, sapien sit amet scelerisque accumsan, felis urna aliquet nunc, viverra mollis odio tellus a nisl. Nulla lobortis lectus non rutrum viverra. Sed et molestie libero. Sed ut ultrices dui.</p>
+            </article>  
+            
+          </div>
         </section>
 
         <footer class="footer">
